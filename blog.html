@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1d1e55" />
+    <!-- The FavIcon -->
+    <link rel="icon" type="image/x-icon" href="/Dist/Img/Fav.webp" />
+    <link rel="stylesheet" href="/Dist/Css/Style.css" />
+    <title>وبلاگ</title>
+    <!-- The Scroll Bar -->
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #f1560d;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c0440b;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The Navgation Tapsi -->
+
+    <nav
+      class="bg-slate-100 h-20 font-vazirBold shadow-lg sticky top-0 z-50"
+      id="navBar"
+    >
+      <div class="container w-5/6 h-full mx-auto">
+        <div class="row flex justify-center items-center h-full">
+          <div id="navBar-R">
+            <a href="./index.html" class="flex hover:text-orange-600">
+              <div class="text-3xl" id="name-logo">تپسی</div>
+              <div class="" id="lines-logo">
+                <div class="my-2 w-4 h-2 bg-orange-600" id="line-logo"></div>
+                <div class="my-2 w-10 h-2 bg-orange-600" id="line-logo"></div>
+              </div>
+            </a>
+          </div>
+          <div class="w-3/4" id="navBar-L">
+            <ul
+              class="h-full hidden lg:flex justify-end items-center font-vazirLight"
+              id="nav-Menu"
+            >
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./video.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >ویدیو</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./suport.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >پشتیبانی</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="/Pages/shares.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >امور سهام</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./TapsiPack.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >تپسی پک</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >فرصت های شغلی</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./blog.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >وبلاگ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="hidden lg:w-1/6 lg:flex justify-center items-center"
+            id="navBar-Btn"
+          >
+            <button
+              class="bg-orange-500 px-8 py-4 rounded-md text-white text-sm hover:bg-orange-700"
+            >
+              دانلود تپسی
+            </button>
+          </div>
+          <div id="Menu-Hum" class="lg:hidden w-1/2 py-1">
+            <a class="flex justify-center items-center">
+              <!-- <i class="bi bi-list text-4xl text-black"></i> -->
+              <div
+                id="Box-Btn-Menu"
+                class="w-10 p-0.5 duration-100 cursor-pointer"
+              >
+                <div
+                  class="w-full p-0.5 bg-black my-2 rounded-lg duration-300"
+                  id="One-Btn-Menu"
+                ></div>
+                <div
+                  class="w-full p-0.5 bg-black my-2 rounded-lg duration-300"
+                  id="Two-Btn-Menu"
+                ></div>
+                <div
+                  class="w-full p-0.5 bg-black my-2 rounded-lg duration-300"
+                  id="Three-Btn-Menu"
+                ></div>
+              </div>
+            </a>
+          </div>
+          <div
+            id="Menu-Hum-list"
+            class="hidden w-full py-16 bg-slate-800 text-white shadow-lg absolute top-20 duration-500"
+          >
+            <div class="container mx-auto">
+              <div class="row">
+                <ul
+                  id="List-menu-hum"
+                  class="w-full h-full flex flex-col justify-around items-center"
+                >
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./video.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >ویدیو</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./suport.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >پشتیبانی</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >امور سهام</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./TapsiPack.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >تپسی پک</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >فرصت های شغلی</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./blog.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >وبلاگ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- The Section Not Found Tapsi -->
+    <section id="Content-notFound">
+      <div class="container mx-auto">
+        <div class="row flex justify-center">
+          <img
+            src="/Dist/Img/68395-data-not-found.gif"
+            class="xl:w-2/5 py-4"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="/Dist/Js/jquery.js"></script>
+  <script src="/Dist/Js/index.js"></script>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "tapsi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tailwind":"tailwindcss -i ./Src/Tailwind.css -o ./Dist/Css/Style.css -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.2.7"
+  }
+}

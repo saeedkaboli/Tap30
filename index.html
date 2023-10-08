@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1d1e55" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
+    <!-- The FavIcon -->
+    <link rel="icon" type="image/x-icon" href="/Dist/Img/Fav.webp" />
+    <link rel="stylesheet" href="Dist/Css/Style.css" />
+    <title>صفحه اصلی</title>
+    <!-- The Scroll Bar -->
+    <style>
+      /* width */
+      ::-webkit-scrollbar {
+        width: 10px;
+      }
+
+      /* Track */
+      ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+      }
+
+      /* Handle */
+      ::-webkit-scrollbar-thumb {
+        background: #f1560d;
+        border-radius: 10px;
+      }
+
+      /* Handle on hover */
+      ::-webkit-scrollbar-thumb:hover {
+        background: #c0440b;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The navBar Tapsi -->
+    <nav
+      class="bg-slate-100 h-20 font-vazirBold shadow-lg sticky top-0 z-50"
+      id="navBar"
+    >
+      <div class="container w-5/6 h-full mx-auto">
+        <div class="row flex justify-center items-center h-full">
+          <div id="navBar-R">
+            <a href="#" class="flex hover:text-orange-600">
+              <div class="text-3xl" id="name-logo">تپسی</div>
+              <div class="" id="lines-logo">
+                <div class="my-2 w-4 h-2 bg-orange-600" id="line-logo"></div>
+                <div class="my-2 w-10 h-2 bg-orange-600" id="line-logo"></div>
+              </div>
+            </a>
+          </div>
+          <div class="w-3/4" id="navBar-L">
+            <ul
+              class="h-full hidden lg:flex justify-end items-center font-vazirLight"
+              id="nav-Menu"
+            >
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./video.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >ویدیو</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./suport.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >پشتیبانی</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >امور سهام</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./TapsiPack.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >تپسی پک</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >فرصت های شغلی</a
+                >
+              </li>
+              <li class="px-2 text-sm" id="item-menu">
+                <a
+                  href="./blog.html"
+                  class="text-gray-400 hover:text-orange-600"
+                  id="link-menu"
+                  >وبلاگ</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="hidden lg:w-1/6 lg:flex justify-center items-center"
+            id="navBar-Btn"
+          >
+            <button
+              class="bg-orange-500 px-8 py-4 rounded-md text-white text-sm hover:bg-orange-700"
+            >
+              دانلود تپسی
+            </button>
+          </div>
+          <div id="Menu-Hum" class="lg:hidden w-1/2 py-1 select-none">
+            <a class="flex justify-center items-center">
+              <!-- <i class="bi bi-list text-4xl text-black"></i> -->
+              <div
+                id="Box-Btn-Menu"
+                class="w-10 p-0.5 duration-100 cursor-pointer"
+              >
+                <div
+                  class="w-full p-0.5 bg-black my-2 rounded-lg duration-300"
+                  id="One-Btn-Menu"
+                ></div>
+                <div
+                  class="w-full p-0.5 bg-black my-2 rounded-lg duration-300"
+                  id="Two-Btn-Menu"
+                ></div>
+                <div
+                  class="w-full p-0.5 bg-black my-2 rounded-lg duration-300"
+                  id="Three-Btn-Menu"
+                ></div>
+              </div>
+            </a>
+          </div>
+          <div
+            id="Menu-Hum-list"
+            class="hidden w-full py-16 bg-slate-800 text-white shadow-lg absolute top-20 duration-500"
+          >
+            <div class="container mx-auto">
+              <div class="row">
+                <ul
+                  id="List-menu-hum"
+                  class="w-full h-full flex flex-col justify-around items-center"
+                >
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./video.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >ویدیو</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./suport.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >پشتیبانی</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >امور سهام</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./TapsiPack.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >تپسی پک</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="#"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >فرصت های شغلی</a
+                    >
+                  </li>
+                  <li id="item-menu-hum" class="my-3">
+                    <a
+                      href="./blog.html"
+                      class="text-gray-400 hover:text-orange-600"
+                      id="Link-menu-hum"
+                      >وبلاگ</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- The Header Tapsi -->
+    <header
+      class="bg-cover h-auto font-vazirBold"
+      id="Banner"
+      style="background-image: url(/Dist/Img/banner.webp)"
+    >
+      <!-- <img src="../Dist/Img/banner.webp" class="relative" alt="" /> -->
+      <div class="container mx-auto">
+        <div class="row flex">
+          <div
+            id="Banner-R"
+            class="lg:basis-2/3 py-5 w-full flex justify-center items-center"
+          >
+            <div
+              id="backGroundOptionTapsi"
+              class="w-10/12 p-7 my-7 bg-blue-900 rounded-2xl bg-opacity-60 relative"
+            >
+              <h1
+                class="text-center md:text-right md:text-5xl text-5xl text-white"
+              >
+                تپسی
+              </h1>
+              <h2
+                class="text-center md:text-right font-vazirLight text-white md:text-2xl text-xl py-5"
+              >
+                اپیکیشن در خواست خودرو و پیک
+              </h2>
+              <div id="BtnOptionsTapsi" class="flex flex-wrap">
+                <div
+                  href="#"
+                  class="w-full text-sm md:text-base flex justify-center md:justify-start md:basis-1/2 py-2"
+                >
+                  <a
+                    href="#"
+                    class="inline-block bg-white text-center py-4 px-7 rounded-lg"
+                  >
+                    <i class="bi bi-download"></i>
+                    <span class="text-sm">دانلود اپیکیشن مسافران</span>
+                  </a>
+                </div>
+                <div
+                  href="#"
+                  class="w-full text-sm md:text-base flex justify-center md:justify-start md:basis-1/2 py-2"
+                >
+                  <a
+                    href="#"
+                    class="inline-block bg-white text-center py-4 px-7 rounded-lg"
+                  >
+                    <i class="bi bi-braces"></i>
+                    <span class="text-sm">وب اپیکیشن مسافران</span>
+                  </a>
+                </div>
+                <div
+                  href="#"
+                  class="w-full text-sm md:text-base flex justify-center md:justify-start md:basis-1/2 py-2 text-white"
+                >
+                  <a
+                    href="#"
+                    class="inline-block border border-white text-center py-4 px-7 rounded-lg"
+                  >
+                    <i class="bi bi-download"></i>
+                    <span class="text-sm">دانلود اپیکیشن رانندگان</span>
+                  </a>
+                </div>
+                <div
+                  href="#"
+                  class="w-full text-sm md:text-base flex justify-center md:justify-start md:basis-1/2 py-2 text-white"
+                >
+                  <a
+                    href="#"
+                    class="inline-block border border-white text-center py-4 px-12 rounded-lg"
+                  >
+                    <i class="bi bi-car-front"></i>
+                    <span class="text-sm">ثبت نام راننده</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="Banner-L" class="hidden lg:block basis-1/2 py-5 relative">
+            <img
+              src="/Dist/Img/mockup-phone.webp"
+              alt=""
+              class="absolute w-2/3 left-28 top-24 z-10"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- The Service Tapsi -->
+    <section class="font-vazirBold p-10" id="Services-Tapsi">
+      <div class="container mx-auto">
+        <div class="row pt-20 md:pt-40">
+          <h1 class="text-3xl p-0 text-center md:text-start md:px-9">
+            سرویس های تپسی
+          </h1>
+          <div class="py-10" id="Select-Optional">
+            <ul
+              class="w-auto lg:flex items-start lg:items-center font-vazirBold"
+              id="List-Selection"
+            >
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img
+                  src="/Dist/Img/cc-classic.png"
+                  alt=""
+                  class="w-20 md:w-24"
+                />
+                <a href="#" id="Link-Selection-Classic" class="mx-4 py-2"
+                  >تپسی کلاسیک</a
+                >
+              </li>
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img src="/Dist/Img/cc-tel.png" alt="" class="w-20 md:w-24" />
+                <a
+                  href="#"
+                  id="Link-Selection-Telephone"
+                  class="mx-4 py-2 inline-block"
+                  >تپسی تلفنی</a
+                >
+              </li>
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img src="/Dist/Img/cc-line.png" alt="" class="w-20 md:w-24" />
+                <a
+                  href="#"
+                  id="Link-Selection-Line"
+                  class="mx-4 py-2 inline-block"
+                  >تپسی لاین</a
+                >
+              </li>
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img
+                  src="/Dist/Img/cc-motopeyk.png"
+                  alt=""
+                  class="w-20 md:w-24"
+                />
+                <a
+                  href="#"
+                  id="Link-Selection-Pick"
+                  class="mx-4 py-2 inline-block"
+                  >تپسی پیک</a
+                >
+              </li>
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img
+                  src="/Dist/Img/cc-autopeyk.png"
+                  alt=""
+                  class="w-20 md:w-24"
+                />
+                <a
+                  href="#"
+                  id="Link-Selection-AutoPack"
+                  class="mx-4 py-2 inline-block"
+                  >تپسی اتو پیک</a
+                >
+              </li>
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img src="/Dist/Img/cc-plus.png" alt="" class="w-20 md:w-24" />
+                <a
+                  href="#"
+                  id="Link-Selection-Plus"
+                  class="mx-4 py-2 inline-block"
+                  >تپسی پلاس</a
+                >
+              </li>
+              <li
+                id="Item-Selection"
+                class="mx-8 py-3 flex flex-col justify-center items-center opacity-50 hover:opacity-100 cursor-pointer"
+              >
+                <img
+                  src="/Dist/Img/cc-hamyar.png"
+                  alt=""
+                  class="w-20 md:w-24"
+                />
+                <a
+                  href="#"
+                  id="Link-Selection-Hamyar"
+                  class="mx-4 py-2 inline-block"
+                  >تپسی همیار</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div id="Select-Optional-Discription" class="p-10 lg:flex">
+            <div id="Select-Optional-Discription-R" class="basis-1/2">
+              <h1
+                id="Heading-Optional"
+                class="text-3xl py-5 text-center md:text-right"
+              >
+                تپسی کلاسیک
+              </h1>
+              <p
+                id="Title-Optional"
+                class="leading-10 text-justify font-vazirLight text-xl lg:pl-32"
+              >
+                با سرویس کلاسیک تپسی، یک خودروی اختصاصی برای رسیدن به مقصدتان
+                دارید. تپسی کلاسیک، راهی سریع و آسان برای سفرهای درون‌شهری در هر
+                ساعتی از روز است. در این سرویس، شما امکان تعیین دو یا چند مقصد و
+                همچنین توقف در مسیر را دارید.
+              </p>
+            </div>
+            <div id="Select-Optional-Discription-L" class="basis-1/2">
+              <img
+                src="/Dist/Img/illus-classic.webp"
+                class="p-0 lg:p-10"
+                alt=""
+                id="Img-Select-Optional"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The line between -->
+    <section id="Line" class="Line"></section>
+    <!-- The Serveices for Business -->
+    <section id="Business-Services">
+      <div class="container mx-auto">
+        <div class="row pt-40 lg:flex">
+          <div class="basis-1/2 text-center lg:text-right" id="Business-R">
+            <h1 class="font-vazirBold text-3xl pt-8 px-10">
+              خدمات تپسی ویژه کسب‌وکارها
+            </h1>
+            <p class="font-vazirLight text-xl p-10 text-justify">
+              پنل سازمانی تپسی، یک سامانه تحت وب است که به سادگی امکان درخواست
+              هم‌زمان تعداد نامحدودی خودرو و پیک را برای کسب‌وکارها و سازمان‌ها
+              فراهم می‌کند. و با استفاده از آن می‌توانید ماموریت های درون‌شهری و
+              ارسال کالاهای خود را به سادگی مدیریت کنید.
+            </p>
+            <a href="#" class="font-vazirBold text-orange-600 text-sm px-10">
+              اطلاعات بیشتر سرویس سازمانی
+              <i class="bi bi-caret-left-fill"></i>
+            </a>
+            <button
+              class="block p-5 bg-orange-600 text-white font-vazirBold rounded-lg my-10 mx-auto lg:m-10"
+            >
+              ورود و ثبت نام پنل سازمانی
+            </button>
+          </div>
+          <div
+            class="basis-1/2 flex justify-center items-center"
+            id="Business-L"
+          >
+            <img src="/Dist/Img/i-mac.webp" class="w-5/6" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The CodeBuy Tapsi -->
+    <section id="Business-Services" class="pt-36 pb-40">
+      <div class="container mx-auto">
+        <div class="row pt-40 lg:flex">
+          <div
+            class="basis-1/2 flex justify-center items-center"
+            id="Business-L"
+          >
+            <img src="/Dist/Img/macbook.webp" class="w-5/6" alt="" />
+          </div>
+          <div class="basis-1/2 text-center lg:text-right" id="Business-R">
+            <h1 class="font-vazirBold text-3xl pt-8 px-10">
+              خرید کد اعتبار تپسی
+            </h1>
+            <p class="font-vazirLight text-xl p-10 text-justify">
+              کد اعتبار تپسی امکان استفاده از تخفیف یک تا ده درصدی سفر با تپسی
+              را برای کاربران، کسب و کارها و سازمان‌ها فراهم می‌کند. تنها با صرف
+              چند دقیقه می‌توانید این کد را تهیه کنید تا هزینه سفرهایتان با تپسی
+              را کاهش دهید یا آن را در اختیار کارکنان و مشتریانتان بگذارید.
+            </p>
+
+            <button
+              class="block p-5 bg-orange-600 text-white font-vazirBold rounded-lg my-10 mx-auto lg:m-10"
+            >
+              خرید اعتبار و کد تخفیف
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Option Tapsi -->
+    <section
+      class="py-10 bg-cover bg-fixed"
+      id="Optional-Tapsi"
+      style="background-image: url(/Dist/Img/parallax.jpeg)"
+    >
+      <div class="container mx-auto">
+        <div class="row lg:flex text-center font-vazirBold text-xl text-white">
+          <div class="basis-1/4 py-1">بسته امنیت سفر</div>
+          <div class="basis-1/4 py-1">تماس تلفنی</div>
+          <div class="basis-1/4 py-1">دسترس پذیری برای توان یابان</div>
+          <div class="basis-1/4 py-1">امکانات هوشمند</div>
+        </div>
+      </div>
+    </section>
+    <!-- The Section Optional Tapsi for Drivers -->
+    <section id="Optional-Drivers" class="py-20">
+      <div class="container mx-auto">
+        <div class="row lg:flex">
+          <div
+            id="OptionalDrivers-R"
+            class="w-full lg:basis-1/2 font-vazirLight text-center lg:text-right"
+          >
+            <h1 class="text-4xl -leading-10 font-vazirBold py-16 px-5">
+              مزایای تپسی برای رانندگان تاکسی اینترنتی
+            </h1>
+            <h4 class="text-xl px-5">
+              رانندگان (سفیران) به‌عنوان همکاران تپسی، جایگاه ویژه‌ای برای شرکت
+              دارند. به همین‌دلیل مزایای مختلفی برای آنها در نظر گرفته شده است.
+            </h4>
+            <h3 class="text-2xl py-12 px-5">
+              کسب درآمد روزانه، پایدار و بدون محدودیت
+            </h3>
+            <ul class="px-5">
+              <li>۱. امکان تسویه‌ی اعتبار در هر ساعت از شبانه‌روز</li>
+              <li>
+                ۲. طرح‌های تشویقی، ماموریت‌ها‌، پاداش و اعطای وام‌های قرض‌الحسنه
+                به‌طور دوره‌ای
+              </li>
+              <li>
+                ۳. نمایش مکان‌های پردرخواست در اپلیکیشن و دریافت سفرهای طلایی
+              </li>
+            </ul>
+            <h3 class="text-2xl py-10 px-5">تضمین امنیت و پشتیبانی رانندگان</h3>
+            <ul class="px-5">
+              <li>۱. پشتیبانی ۲۴ ساعته</li>
+              <li>
+                ۲. امکانات امنیت سفر شامل تماس اضطراری با واحد امنیت و پشتیبانی
+                ۲۴ ساعته تیم امنیت
+              </li>
+            </ul>
+            <h3 class="text-2xl py-10 px-5">
+              واریز سهمیه بنزین ویژه رانندگان تپسی
+            </h3>
+            <ul class="px-5">
+              <li>۱. نمایش میزان پیمایش ماهانه درون اپلیکیشن</li>
+              <li>۲. محاسبه‌ی مسافت طی شده تا مسافر در پیمایش</li>
+            </ul>
+            <h3 class="text-2xl py-10 px-5">
+              استفاده از مزایای باشگاه رانندگان تپسی
+            </h3>
+            <ul class="px-5">
+              <li>
+                ۱. تخفیف روی خدمات خودرو مانند بیمه، سرویس‌های دوره‌ای، خرید
+                لاستیک و ...
+              </li>
+              <li>
+                ۲. تخفیف روی خدمات رفاهی مانند وام قرض‌الحسنه، خدمات درمانی،
+                خرید اقساطی و ...
+              </li>
+            </ul>
+            <div class="flex flex-col lg:flex-row py-10 px-5" id="Btns">
+              <a
+                href=""
+                class="m-3 py-4 px-5 text-white bg-blue-700 hover:bg-blue-800 rounded-md"
+                >ثبت نام راننده تاکسی انلاین</a
+              >
+              <a
+                href=""
+                class="m-3 py-4 px-5 text-white bg-blue-700 hover:bg-blue-800 rounded-md"
+                >دانلود برنامه تپسی راننده</a
+              >
+            </div>
+          </div>
+          <div id="OptionalDrivers-L" class="w-full lg:basis-1/2">
+            <img src="/Dist/Img/driver.webp" class="mx-auto py-16" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- The Section Tapsi Blog -->
+    <seciton id="Blog">
+      <div class="container mx-auto py-10">
+        <div class="row">
+          <div id="Blog-Title">
+            <h1
+              class="text-center lg:text-right text-4xl font-vazirBold px-0 lg:px-14"
+            >
+              تازه‌ترین‌های وبلاگ تپسی
+            </h1>
+          </div>
+          <ul
+            id="Blog-Cards"
+            class="lg:flex justify-around items-center py-10 font-vazirLight"
+          >
+            <li
+              id="Blog-items"
+              class="p-5 rounded-md basis-1/4 shadow-md hover:shadow-2xl"
+            >
+              <a href="#" id="Blog-link" class="">
+                <img src="/Dist/Img/ChatGPT.jpg" class="rounded-lg" alt="" />
+                <h4 class="text-2xl font-vazirBold py-5">
+                  چت جی پی تی در اپلیکیشن تپسی
+                </h4>
+                <p class="text-justify">
+                  هوش مصنوعی و امکانات و ابزارهای شگفت‌انگیز آن بحث داغ این
+                  روزها محسوب می‌شود. در میان همه موضوعات مربوط به هوش مصنوعی،
+                  چت جی پی تی (ChatGPT)
+                </p>
+              </a>
+            </li>
+            <li
+              id="Blog-items"
+              class="p-5 rounded-md basis-1/4 shadow-md hover:shadow-2xl"
+            >
+              <a href="#" id="Blog-link">
+                <img
+                  src="/Dist/Img/Nowrouz-Trip-scaled.jpg"
+                  class="rounded-lg"
+                  alt=""
+                />
+                <h4 class="text-2xl font-vazirBold py-5">
+                  تعطیلات عید نوروز 1402 + پیشنهاد سفر و نکات مهم سفرهای نوروزی
+                </h4>
+                <p class="text-justify">
+                  همه ما برای تعطیلات عید نوروز 1402 برنامه‌های زیادی در نظر
+                  گرفته‌ایم و بسیاری قصد سفر و تجدید روحیه را داریم. برای سفر در
+                  تعطیلات عید نوروز 1402 گزینه‌های
+                </p>
+              </a>
+            </li>
+            <li
+              id="Blog-items"
+              class="p-5 rounded-md basis-1/4 shadow-md hover:shadow-2xl"
+            >
+              <a href="#" id="Blog-link">
+                <img
+                  src="/Dist/Img/Blog-4-scaled.jpg"
+                  class="rounded-lg"
+                  alt=""
+                />
+                <h4 class="text-2xl font-vazirBold py-5">
+                  اقامت 5 ستاره فقط با چند ستاره
+                </h4>
+                <p class="text-justify">
+                  اگر دوست دارید که در یک هتل 5 ستاره اقامت داشته باشید؛
+                  می‌توانید شانس خود را در باشگاه مشتریان تپسی (سفینه تپسی)
+                  امتحان کنید. شما این فرصت را دارید تا با
+                </p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </seciton>
+    <!-- The Section Tapsin in Iran -->
+    <section
+      class="hidden lg:block bg-[#f8f8f9] bg-no-repeat pb-20"
+      id="Tapsi-Iran"
+      style="background-image: url(/Dist/Img/map-back.svg)"
+    >
+      <div class="container mx-auto">
+        <div class="row">
+          <div id="Tapsi-Iran-Title" class="p-10">
+            <h1 class="text-4xl font-vazirBold">تپسی در ایران</h1>
+          </div>
+          <ul
+            id="Citys"
+            class="font-vazirLight flex flex-wrap w-4/5 justify-around"
+          >
+            <li id="City" class="m-5">
+              <p>تهران</p>
+              <p>tehran</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>کرج</p>
+              <p>karaj</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>مشهد</p>
+              <p>mashhad</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>اصفهان</p>
+              <p>Esfahan</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>شیراز</p>
+              <p>Shiraz</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>ارومیه</p>
+              <p>Uromia</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>لاهیجان</p>
+              <p>Lahijan</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>رشت</p>
+              <p>Rasht</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>انزلی</p>
+              <p>Anzali</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>تبریز</p>
+              <p>Tabriz</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>ساری</p>
+              <p>Sari</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>یزد</p>
+              <p>Yazd</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>قم</p>
+              <p>Qom</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>اهواز</p>
+              <p>Ahvaz</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>بابل</p>
+              <p>Babol</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>قائم‌شهر</p>
+              <p>Qaem Shahr</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>آمل</p>
+              <p>Amol</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>کرمانشاه</p>
+              <p>kermanshah</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>گرگان</p>
+              <p>Gorgan</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>قزوین</p>
+              <p>Qazvin</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>اراک</p>
+              <p>Arak</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>نیشابور</p>
+              <p>Neyshabur</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>نور</p>
+              <p>Nur</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>محمودآباد</p>
+              <p>Mahmudabad</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>بجنورد</p>
+              <p>Bojnod</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>اردبیل</p>
+              <p>Ardebil</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>همدان</p>
+              <p>Hamedan</p>
+            </li>
+            <li id="City" class="m-5">
+              <p>خرم آباد</p>
+              <p>Khoramabad</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>کیش</p>
+              <p>Kish</p>
+            </li>
+            <li id="City" class="m-7">
+              <p>کرمان</p>
+              <p>Kerman</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- The Footer Tapsi -->
+    <footer id="Footer" class="text-white bg-black">
+      <div class="container mx-auto">
+        <div class="row py-14 font-vazirLight">
+          <div
+            class="lg:flex justify-around items-start py-5 text-center lg:text-right"
+            id="Footer-Tapsi-Menu"
+          >
+            <ul id="List-Menu" class="cursor-pointer">
+              <h1 class="py-3 text-4xl font-vazirBold">تپسی</h1>
+              <li class="text-sm text-slate-400">
+                اپلیکیشن درخواست خودرو و پیک
+              </li>
+              <li class="text-xs">
+                تمام حقوق مادی و معنوی این وبسایت متعلق به تپسی است.
+              </li>
+            </ul>
+            <ul id="List-Menu" class="cursor-pointer">
+              <h1 class="py-3 text-xl font-vazirBold">تپسی</h1>
+              <li class="hover:text-orange-600">وبلاگ تپسی</li>
+              <li class="hover:text-orange-600">فرصت شغلی</li>
+              <li class="hover:text-orange-600">تماس با ما</li>
+              <li class="hover:text-orange-600">لوگو و هویت سازمانی</li>
+              <li class="hover:text-orange-600">معرفی رانندبه تپسی</li>
+              <li class="hover:text-orange-600">استخدام بازاریابی</li>
+            </ul>
+            <ul id="List-Menu" class="cursor-pointer">
+              <h1 class="py-3 text-xl font-vazirBold">مسافران</h1>
+              <li class="hover:text-orange-600">دانلود اپ مسافر</li>
+              <li class="hover:text-orange-600">نسخه وب تپسی</li>
+              <li class="hover:text-orange-600">پرسش های متداول مسافران</li>
+              <li class="hover:text-orange-600">شرایط و قوانین مسافران</li>
+              <li class="hover:text-orange-600">باشگاه مشتریان</li>
+            </ul>
+            <ul id="List-Menu" class="cursor-pointer">
+              <h1 class="py-3 text-xl font-vazirBold">رانندگان</h1>
+              <li class="hover:text-orange-600">دانلود اپ سفیر</li>
+              <li class="hover:text-orange-600">
+                ثبت نام راننده تاکسی اینترنتی
+              </li>
+              <li class="hover:text-orange-600">پرسش های متداول سفیران</li>
+              <li class="hover:text-orange-600">شرایط و قوانین سفیران</li>
+              <li class="hover:text-orange-600">باشگاه سفیران</li>
+              <li class="hover:text-orange-600">ثبت نام رانندگان موتور</li>
+            </ul>
+            <ul id="List-Menu" class="cursor-pointer">
+              <h1 class="py-3 text-xl font-vazirBold">کسب و کارها</h1>
+              <li class="hover:text-orange-600">پنل سازمانی تپسی</li>
+              <li class="hover:text-orange-600">خرید کد اعتبار و تخفیف</li>
+              <li class="hover:text-orange-600">دریافت API</li>
+            </ul>
+          </div>
+          <div class="py-2 flex" id="Footer-Tapsi-Access">
+            <div
+              class="px-1 py-2 mx-3 lg:mr-10 bg-white rounded-lg"
+              id="Background-white-Img"
+            >
+              <img src="/Dist/Img/etehadiye.png" alt="" />
+            </div>
+            <div
+              class="px-1 py-2 mx-3 bg-white rounded-lg"
+              id="Background-white-Img"
+            >
+              <img src="/Dist/Img/logo.png" alt="" />
+            </div>
+            <div
+              class="px-1 py-2 mx-3 bg-white rounded-lg"
+              id="Background-white-Img"
+            >
+              <img src="/Dist/Img/logo (1).png" alt="" />
+            </div>
+          </div>
+          <div
+            class="py-2 text-center lg:text-right"
+            id="Footer-Tapsi-Social-Network"
+          >
+            <h1 class="mx-7" id="Title-Social-Network">تپسی در شبکه اجتماعی</h1>
+            <div class="lg:flex mx-7 py-2" id="Icon-Social-Network">
+              <i
+                class="mx-2 text-gray-400 hover:text-orange-600 text-xl bi bi-facebook"
+              ></i>
+              <i
+                class="mx-2 text-gray-400 hover:text-orange-600 text-xl bi bi-instagram"
+              ></i>
+              <i
+                class="mx-2 text-gray-400 hover:text-orange-600 text-xl bi bi-linkedin"
+              ></i>
+              <i
+                class="mx-2 text-gray-400 hover:text-orange-600 text-xl bi bi-whatsapp"
+              ></i>
+              <i
+                class="mx-2 text-gray-400 hover:text-orange-600 text-xl bi bi-telegram"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="/Dist/Js/jquery.js"></script>
+  <script src="/Dist/Js/index.js"></script>
+</html>
